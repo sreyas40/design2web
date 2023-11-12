@@ -1,3 +1,6 @@
+::-webkit-scrollbar{
+    visibility: hidden;
+}
 body {
     margin: 0;
     padding: 0 10% 0 10%;
@@ -29,6 +32,10 @@ h3 {
 h5 {
     text-align: center;
     font-size: 1.1rem;
+}
+h6{
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0 0;
 }
 header {
     padding-top: 2rem;
@@ -101,9 +108,57 @@ header {
 }
 .main_features{
 display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: space-around;
 }
-.main_features div{
-    width: 40%;
+.main_features>div{
+    position: relative;
+    width: 28rem;
+    height: 25rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: #c95ef327;
+    border-radius: 10px;
+}
+
+.feature_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: #f0e6f87e;
+    border-radius: 6px;
+}
+.feature_icon img{
+    object-fit: contain;
+    width: 70%;
+    height: 70%;
+}
+.feature_direct_icon{
+height: 3.9rem;
+width: 3.7rem;
+position: absolute;
+bottom: 2rem;
+transition: background-color 300ms ease-in-out;
+background-color: transparent;
+border: solid .1rem #4A494F;
+}
+svg{
+    fill: white;
+    object-fit: contain;
+        width: 50%;
+        height: 50%;
+        transition: fill 300ms ease-in-out;
+}
+.feature_direct_icon:hover svg{
+    fill: black;
+}
+.feature_direct_icon:hover  {
+    background-color: #EFEDFF;
+    cursor: pointer;
 }
 footer{
     display: flex;
