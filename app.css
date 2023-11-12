@@ -3,6 +3,7 @@ body {
     padding: 0 10% 0 10%;
     color: white;
     background-color: black;
+    font-family: Acumin Pro;
 }
 
 a {
@@ -21,8 +22,9 @@ h2 {
 }
 h3 {
     font-weight: normal;
-    letter-spacing: .25rem;
+    letter-spacing: .4rem;
     margin-bottom: .1rem;
+    color: #cfc3ff;
 }
 h5 {
     text-align: center;
@@ -60,8 +62,9 @@ header {
     justify-content: space-between;
 }
 .ptext {
-    width: 50%;
-    font-size: 2rem;
+    width: 60%;
+    font-size: 1.3rem;
+    margin-top: 0;
 }
 .ctnr-1 {
     width: 30%;
@@ -91,8 +94,17 @@ header {
     height: 6.25rem;
     object-fit: contain;
 }
-
-
+.feature_highlights{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+.main_features{
+display: flex;
+}
+.main_features div{
+    width: 40%;
+}
 footer{
     display: flex;
     justify-content: space-between;
