@@ -1,6 +1,7 @@
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     visibility: hidden;
 }
+
 body {
     margin: 0;
     padding: 0 10% 0 10%;
@@ -13,39 +14,47 @@ a {
     text-decoration: none;
     color: inherit;
 }
-a:hover{
+
+a:hover {
     color: #8A79FF;
 }
+
 h1 {
     font-size: 5rem;
 }
+
 h2 {
     font-size: 2.4rem;
     margin: .5rem 0;
 }
+
 h3 {
     font-weight: normal;
     letter-spacing: .4rem;
     margin-bottom: .1rem;
     color: #cfc3ff;
 }
+
 h5 {
     text-align: center;
     font-size: 1.1rem;
 }
-h6{
+
+h6 {
     font-size: 1.5rem;
     margin: 1.5rem 0 0 0;
 }
+
 header {
     padding-top: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .btn {
     display: flex;
-    align-items:center ;
+    align-items: center;
     justify-content: center;
     background-color: #5C45FD;
     border: none;
@@ -54,31 +63,37 @@ header {
     width: 7.5rem;
     height: 2.5rem;
 }
-.btn img{
+
+.btn img {
     width: 1rem;
     height: 1rem;
 }
-.projects-btn{
+
+.projects-btn {
     width: 8.5rem;
     border: solid 2px #5C45FD;
     background-color: transparent;
 }
+
 .nav-links {
     width: 30%;
     display: flex;
     justify-content: space-between;
 }
+
 .ptext {
     width: 60%;
     font-size: 1.3rem;
     margin-top: 0;
 }
+
 .ctnr-1 {
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .company-list {
     width: 100%;
     height: 5rem;
@@ -96,23 +111,27 @@ header {
     /* border: solid 2px #ffffff; */
     border-radius: 5px;
 }
+
 .company-list div img {
     width: 6.25rem;
     height: 6.25rem;
     object-fit: contain;
 }
-.feature_highlights{
+
+.feature_highlights {
     display: flex;
     flex-direction: column;
     margin: 1.5rem 0;
 }
-.main_features{
-display: flex;
-flex-wrap: wrap;
-width: 100%;
-justify-content: space-around;
+
+.main_features {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
 }
-.main_features>div{
+
+.main_features>div {
     position: relative;
     width: 28rem;
     height: 25rem;
@@ -123,7 +142,7 @@ justify-content: space-around;
     border-radius: 10px;
 }
 
-.feature_icon{
+.feature_icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,35 +151,100 @@ justify-content: space-around;
     background-color: #f0e6f87e;
     border-radius: 6px;
 }
-.feature_icon img{
+
+.feature_icon img {
     object-fit: contain;
     width: 70%;
     height: 70%;
 }
-.feature_direct_icon{
-height: 3.9rem;
-width: 3.7rem;
-position: absolute;
-bottom: 2rem;
-transition: background-color 300ms ease-in-out;
-background-color: transparent;
-border: solid .1rem #4A494F;
+
+.feature_direct_icon {
+    height: 3.9rem;
+    width: 3.7rem;
+    position: absolute;
+    bottom: 2rem;
+    transition: background-color 300ms ease-in-out;
+    background-color: transparent;
+    border: solid .1rem #4A494F;
 }
-svg{
+
+svg {
     fill: white;
     object-fit: contain;
-        width: 50%;
-        height: 50%;
-        transition: fill 300ms ease-in-out;
+    width: 50%;
+    height: 50%;
+    transition: fill 300ms ease-in-out;
 }
-.feature_direct_icon:hover svg{
+
+.feature_direct_icon:hover svg {
     fill: black;
 }
-.feature_direct_icon:hover  {
+
+.feature_direct_icon:hover {
     background-color: #EFEDFF;
     cursor: pointer;
 }
-footer{
+
+._projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+._projects>div {
+    width: 25rem;
+    height: 30rem;
+    margin-bottom: 5rem;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+}
+._projects>div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+._projects>div:hover   button{
+    bottom: 0;
+}
+._projects>div button{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem;
+    align-items: center;
+    bottom: -3rem;
+    transition: bottom 300ms ease-in-out !important;
+    font-family: inherit;
+    font-size: 1rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    backdrop-filter: blur(50px);
+    cursor: pointer;
+}
+._projects>div button svg{
+    width: auto;
+    height: 1.5rem;
+    margin-left: .5rem;
+    position: relative;
+    bottom: .1rem;
+}
+._pricing{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+._pricing> div{
+    width: 22rem;
+    height: 25rem;
+    background-color: #1e1e1e9d;
+    padding: 1rem;
+}
+
+footer {
     display: flex;
     justify-content: space-between;
 }
