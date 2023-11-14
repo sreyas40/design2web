@@ -45,6 +45,30 @@ h6 {
     margin: 1.5rem 0 0 0;
 }
 
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+    margin-bottom: 2rem;
+}
+
+li {
+    margin-bottom: .5rem;
+}
+
+li::before {
+    content: '';
+    display: inline-block;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-size: contain;
+    background-image: url("assets/icons/icon_verified.svg");
+    margin-right: .3rem;
+    position: relative;
+    top: .2rem;
+}
+._pricing>div:hover ,.main_features>div:hover{
+    bottom: .5rem;
+}
 header {
     padding-top: 2rem;
     display: flex;
@@ -133,13 +157,16 @@ header {
 
 .main_features>div {
     position: relative;
+    bottom: 0;
     width: 28rem;
     height: 25rem;
     margin-bottom: 2rem;
     padding: 2rem;
     box-sizing: border-box;
-    background-color: #c95ef327;
+    background-color: #d6b7e227;
     border-radius: 10px;
+    backdrop-filter: blur(70px);
+    transition: bottom 200ms ease-in-out;
 }
 
 .feature_icon {
@@ -200,15 +227,18 @@ svg {
     border-radius: 15px;
     position: relative;
 }
-._projects>div img{
+
+._projects>div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-._projects>div:hover   button{
+
+._projects>div:hover button {
     bottom: 0;
 }
-._projects>div button{
+
+._projects>div button {
     position: absolute;
     display: flex;
     width: 100%;
@@ -225,25 +255,65 @@ svg {
     backdrop-filter: blur(50px);
     cursor: pointer;
 }
-._projects>div button svg{
+
+._projects>div button svg {
     width: auto;
     height: 1.5rem;
     margin-left: .5rem;
     position: relative;
     bottom: .1rem;
 }
-._pricing{
+
+._pricing {
     display: flex;
     width: 100%;
     justify-content: space-around;
 }
-._pricing> div{
+
+._pricing>div {
     width: 22rem;
-    height: 25rem;
+    height: 27rem;
     background-color: #1e1e1e9d;
-    padding: 1rem;
+    backdrop-filter: blur(50px);
+    padding: 1.5rem;
+    position: relative;
+    bottom: 0;
+    transition: bottom 200ms ease-in-out;
+    border-radius: 8px;
 }
 
+._pricing>div h4 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+._pricing>div button {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: solid 1px #5C45FD;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 300ms ease-in-out;
+    cursor: pointer;
+}
+._pricing>div button:hover{
+    background-color: #5C45FD;
+}
+
+._pricing>div button img {
+    height: 2rem;
+    width: auto;
+}
+
+.user_feedback{
+   
+}
 footer {
     display: flex;
     justify-content: space-between;
